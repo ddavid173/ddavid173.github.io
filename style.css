@@ -2,7 +2,7 @@ body {
     height: 100vh;
     width: 100vw;
     margin: 0px;
-    background-color: white;
+    background-color: #bf5700;
   }
   
   .rubik-font {
@@ -19,8 +19,8 @@ body {
     z-index: 2;
     transition: transform 500ms cubic-bezier(.13,.53,.38,.97);
   }
+
   img {
-    padding: 1vh;
     border-radius: 2vh;
   }
 
@@ -32,13 +32,45 @@ body {
 
   #gallery {
     line-height:0;
-    -webkit-column-count:5; /* split it into 5 columns */
+    -webkit-column-count:4; /* split it into 5 columns */
     -webkit-column-gap:5px; /* give it a 5px gap between columns */
-    -moz-column-count:5;
+    -moz-column-count:4;
     -moz-column-gap:5px;
-    column-count:5;
+    column-count:4;
     column-gap:5px;
   }
+
+  .short {
+    max-height: 35vh;
+  }
+
+  .tall {
+    max-height: 60vh;
+  }
+
+  @media (max-width: 1200px) {
+    #gallery {
+     -moz-column-count:    4;
+     -webkit-column-count: 4;
+     column-count:         4;
+    }
+  }
+
+  @media (max-width: 800px) {
+    #gallery {
+     -moz-column-count:    3;
+     -webkit-column-count: 3;
+     column-count:         3;
+    }
+  }
+
+  @media (max-width: 600px) {
+    #gallery {
+     -moz-column-count:    2;
+     -webkit-column-count: 2;
+     column-count:         2;
+    }
+ }
   
   body[data-nav="true"] > main {
     transform: translateY(-50%);
@@ -61,6 +93,7 @@ body {
     padding: 0rem clamp(1rem, 2vw, 2rem);
     transform: translateY(70%) scale(0.9);
     transition: transform 500ms cubic-bezier(.13,.53,.38,.97); 
+    align-items: center;
   }
   
   body[data-nav="true"] > nav > #nav-links {
@@ -72,14 +105,14 @@ body {
   }
   
   #nav-links > .nav-link > .nav-link-label {
-    color: white;
+    color: black;
     font-size: 1.25rem;
     margin: 0rem;
     text-transform: uppercase;
   }
   
   #nav-links > .nav-link > .nav-link-image {
-    width: max(20vw, 400px);
+    width: 22.5vw;
     aspect-ratio: 1.8 / 1;
     border-radius: 0.5rem;
     margin-top: 0.75rem;
@@ -114,7 +147,7 @@ body {
   }
   
   body[data-nav="true"] > #nav-toggle {
-    background-color: rgb(85, 130, 149);
+    background-color: white;
   }
   
   body:not([data-nav="true"]) > #nav-toggle:hover > .open {
@@ -127,7 +160,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(0.9);
-    color: rgb(246, 231, 224);
+    color: #bf5700;
     font-size: 1.75rem;
     opacity: 0;
     transition: transform, opacity;
