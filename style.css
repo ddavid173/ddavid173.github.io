@@ -27,7 +27,7 @@ body {
   #gallery img {
     width: 100% !important;
     height: auto !important;
-    margin-bottom:5px; /* to match column gap */
+    margin-top:5px; /* to match column gap */
   }
 
   #gallery {
