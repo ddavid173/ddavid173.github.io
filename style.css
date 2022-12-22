@@ -173,11 +173,14 @@ body[data-nav="true"] > #nav-toggle > .close {
   
   nav {
     text-align: center;
+    align-content: center;
+    vertical-align: bottom;
   }
 
   #nav-links {
     display: grid;
     grid-template-columns: 50% 50%;
+    bottom: 0px;
   }
   .nav-link {
     text-align: center;
