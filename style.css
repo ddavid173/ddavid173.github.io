@@ -190,4 +190,8 @@ body[data-nav="true"] > #nav-toggle > .close {
     transform: translate(-23.75vw, 0)
   }
 
+  body[data-nav="true"] > nav > #nav-links {
+    transform: 0 scale(1);
+  }
+
 }
