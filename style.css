@@ -159,7 +159,7 @@ body[data-nav="true"] > #nav-toggle > .close {
   }
 }
 
-@media (max-width: 800px) {
+@media (orientation: portrait) {
   #gallery {
     -moz-column-count:    2;
     -webkit-column-count: 2;
@@ -170,12 +170,24 @@ body[data-nav="true"] > #nav-toggle > .close {
     width: 20vw;
     height: 20vw
   }
-}
 
-@media (orientation: portrait) {
-  #gallery {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
+  #nav-links {
+    display: inline;
+    align-items: center;
   }
+  .nav-link {
+    width: 100vw;
+    text-align: center;
+  }
+  .nav-link-image {
+    align-self: center;
+    margin-left: 38.75vw;
+  }
+
+  body[data-nav="true"] > #nav-toggle {
+    background-color: white;
+    left: 15vh;
+    transform: translate(-23.75vw, 0)
+  }
+
 }
