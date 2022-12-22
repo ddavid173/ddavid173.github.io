@@ -170,26 +170,20 @@ body[data-nav="true"] > #nav-toggle > .close {
     width: 20vw;
     height: 20vw
   }
-
-  #nav-links {
-    display: inline;
-    align-items: center;
-  }
-  .nav-link {
-    width: 100vw;
+  
+  nav {
     text-align: center;
   }
-  .nav-link-image {
-    align-self: center;
-    margin-left: 38.75vw;
-  }
 
-  body[data-nav="true"] > #nav-toggle {
-    background-color: white;
-    left: 15vh;
-    transform: translate(-23.75vw, 0)
+  #nav-links {
+    display: grid;
+    grid-template-columns: 50% 50%;
   }
-
+  .nav-link {
+    text-align: center;
+    margin: auto;
+  }
+  
   body[data-nav="true"] > nav > #nav-links {
     transform: 0 scale(1);
   }
