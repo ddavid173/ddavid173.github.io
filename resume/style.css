@@ -1,0 +1,162 @@
+/* Reset default styles */
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Add some basic styling */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    font-weight: normal;
+  }
+  
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  h3 {
+    font-size: 16px;
+  }
+  
+  p {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+
+  main {
+    margin-right: 5vw;
+  }
+  
+  /* Style the navigation menu */
+  #navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15vw;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+  }
+  
+  #navigation .nav-list-items .nav-text {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+  }
+
+  .nav-list-items .nav-text:hover {
+    background-color: #333;
+  }
+
+  #nav-list {
+    list-style: none;
+    margin-top: 2.5vw;
+  }
+
+  .nav-text {
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+  }
+  
+  .me {
+    margin-top: 2.5vw;
+    margin-left: 2.5vw;
+    width: 10vw;
+  }
+  /* Style the main content */
+  main {
+    margin: 5vh 20vw; /* Leave space for the navigation menu */
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin-bottom: 10px;
+  }
+  
+  header ul {
+    margin-bottom: 0;
+  }
+  
+  /* Style the sections */
+  section {
+    margin-bottom: 20px;
+  }
+  
+  section h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Style the list items in the work experience and education sections */
+  section ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #eee;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Mobile Friendly */
+  @media (orientation: portrait) {
+    #navigation {
+      position: fixed;
+      height: 10vh;
+      display: inline;
+      color: #fff;
+      width: 100vw;
+    }
+  
+    #navigation ul {
+      display: flex;
+      align-items: center;
+    }
+
+    #nav-list {
+        margin-top: 0;
+    }
+
+    .nav-text {
+      width: 25vw;
+      padding-top: 0;
+      padding-bottom: 0; 
+    }
+
+    .me {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    main {
+        margin: 15vh 5vw;
+    }
+
+  }
