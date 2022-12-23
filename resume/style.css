@@ -62,7 +62,7 @@ html, body, h1, h2, h3, p, ul, li {
   }
 
   .nav-list-items .nav-text:hover {
-    background-color: #333;
+    background-color: rgb(97, 97, 97);
   }
 
   #nav-list {
@@ -144,7 +144,8 @@ html, body, h1, h2, h3, p, ul, li {
     .nav-text {
       width: 25vw;
       padding-top: 0;
-      padding-bottom: 0; 
+      padding-bottom: 0;
+      font-size: 3vh;
     }
 
     .me {
