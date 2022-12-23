@@ -161,34 +161,29 @@ body[data-nav="true"] > #nav-toggle > .close {
 
 @media (orientation: portrait) {
   #gallery {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
+    visibility: hidden;
   }
 
   #nav-toggle {
-    width: 20vw;
-    height: 20vw
-  }
-  
-  nav {
-    text-align: center;
-    align-content: center;
-    vertical-align: bottom;
+    visibility: hidden;
   }
 
   #nav-links {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    bottom: 0px;
+    align-items: center;
+    display: inline;
+    margin-top: 10vh;
   }
   .nav-link {
     text-align: center;
-    margin: auto;
+    padding: 0;
+  }
+
+  .nav-link-image {
+    margin-left: 38.75vw;
   }
   
-  body[data-nav="true"] > nav > #nav-links {
-    transform: 0 scale(1);
+  nav {
+    height: 100%;
   }
 
 }
