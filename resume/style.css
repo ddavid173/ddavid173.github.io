@@ -74,6 +74,10 @@ html, body, h1, h2, h3, p, ul, li {
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
+
+  .nav-list-items {
+    overflow: hidden;
+  }
   
   .me {
     margin-top: 2.5vw;
