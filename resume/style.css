@@ -27,6 +27,7 @@ html, body, h1, h2, h3, p, ul, li {
   
   h3 {
     font-size: 16px;
+    font-weight: bold;
   }
   
   p {
@@ -39,6 +40,15 @@ html, body, h1, h2, h3, p, ul, li {
 
   main {
     margin-right: 5vw;
+  }
+
+  .oneTab {
+    margin-left: 2.5vw;
+  }
+
+  .twoTab {
+    margin-left: 2.5vw;
+    list-style: inside;
   }
   
   /* Style the navigation menu */
