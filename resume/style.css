@@ -50,6 +50,11 @@ html, body, h1, h2, h3, p, ul, li {
     margin-left: 2.5vw;
     list-style: inside;
   }
+
+  .twoLists {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
   
   /* Style the navigation menu */
   #navigation {
