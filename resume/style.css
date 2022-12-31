@@ -4,40 +4,6 @@ html, body, h1, h2, h3, p, ul, li {
     padding: 0;
     scroll-behavior: smooth;
   }
-  
-  /* Add some basic styling */
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333;
-  }
-  
-  h1, h2, h3 {
-    font-weight: normal;
-  }
-  
-  h1 {
-    font-size: 24px;
-  }
-  
-  h2 {
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  ul {
-    list-style: none;
-  }
 
   main {
     margin-right: 5vw;
@@ -132,14 +98,6 @@ html, body, h1, h2, h3, p, ul, li {
   /* Style the list items in the work experience and education sections */
   section ul li {
     margin-bottom: 10px;
-  }
-  
-  /* Style the footer */
-  footer {
-    background-color: #eee;
-    border-top: 1px solid #ddd;
-    padding: 20px;
-    text-align: center;
   }
 
   /* Mobile Friendly */
