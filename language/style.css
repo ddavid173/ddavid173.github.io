@@ -1,0 +1,49 @@
+body {
+    background-color: black;
+    display: flex;
+    overflow: hidden;
+}
+
+.circle {
+    width: 50vh;
+    height: 50vh;
+    margin: auto;
+    margin-top: 45vh;
+    border-radius: 50%;
+    border: 2px solid white;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.dot {
+    width: 5vh;
+    height: 5vh;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    transform-origin: center;
+}
+
+#dot1 {
+    margin-top: 0;
+    margin-left: 22.5vh;
+    animation: rotate 5s linear infinite;
+    animation-delay: 1s;
+}
+
+#dot2 {
+    animation: rotate 5s linear infinite;
+    animation-delay: 1s;
+}
+
+#dot3 {
+    margin-top: 47.5vh;
+    margin-left: 22.5vh;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
