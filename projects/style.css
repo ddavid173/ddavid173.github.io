@@ -1,0 +1,19 @@
+html, body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+#intro {
+    background-color: #333;
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+}
+
+#intro h2, #intro p {
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    margin: auto;
+}
