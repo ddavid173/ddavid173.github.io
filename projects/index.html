@@ -10,8 +10,79 @@
 </head>
 <body>
     <div id="intro">
-        <h2>Projects</h2>
-        <p>This is an active list of all of my projects current and past(Finished of Not Finished).</p>
+        <div class="contain">
+            <h2>Projects</h2>
+            <p>This is an active list of all of my projects current and past(Finished or not Finished).</p>
+        </div>
+        <div id="projectSearch">
+            <input id="search" type="text" placeholder="Enter search term" >
+            <button id="enter" onclick="handleClick()">Search</button>
+        </div>
     </div>
+    <ul id="projectList">
+        <li class="cardVisible">
+            <div class="cardImg">
+                <img src="..\imgs\work.jpg" alt="Project Cover">
+                <p class="pName">Project Name</p>
+            </div>
+            <div class="cardInfo">
+                <div class="desContainer">
+                    <p class="pDes">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        et dolore magna aliqua. Purus sit amet volutpat consequat mauris nunc congue nisi. Quam lacus suspendisse 
+                        faucibus interdum posuere lorem ipsum dolor. Arcu bibendum at varius vel. Urna cursus eget nunc scelerisque viverra. 
+                        Praesent semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Varius duis at consectetur lorem donec 
+                        massa sapien faucibus. Donec ac odio tempor orci dapibus. Id diam maecenas ultricies mi eget mauris pharetra et. 
+                        Eget est lorem ipsum dolor sit amet consectetur adipiscing. Pellentesque habitant morbi tristique senectus et netus 
+                        et. Sodales ut etiam sit amet. Ipsum dolor sit amet consectetur. Sit amet luctus venenatis lectus magna fringilla urna.
+                        Malesuada fames ac turpis egestas. Quisque sagittis purus sit amet. Tempus quam pellentesque nec nam aliquam sem et tortor. 
+                        Eu lobortis elementum nibh tellus molestie nunc. Pulvinar neque laoreet suspendisse interdum consectetur. Posuere morbi 
+                        leo urna molestie at elementum eu. Arcu cursus euismod quis viverra nibh cras pulvinar. Tellus id interdum 
+                        velit laoreet id. Vulputate eu scelerisque felis imperdiet proin fermentum leo. Scelerisque in dictum non consectetur. 
+                        Diam maecenas ultricies mi eget mauris pharetra et. Nulla facilisi morbi tempus iaculis urna id volutpat lacus. Elit 
+                        pellentesque habitant morbi tristique senectus et netus et malesuada. Lobortis mattis aliquam faucibus purus in massa 
+                        tempor. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi. Montes nascetur ridiculus 
+                        mus mauris vitae ultricies leo integer malesuada. Facilisi etiam dignissim diam quis enim lobortis. Tempus urna et pharetra 
+                        pharetra.At tellus at urna condimentum mattis pellentesque id nibh tortor. Sagittis eu volutpat odio facilisis. Magnis dis 
+                        parturient montes nascetur ridiculus mus mauris. In dictum non consectetur a erat nam. Aenean pharetra magna ac placerat 
+                        vestibulum. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit eget. Natoque penatibus et magnis dis parturient 
+                        montes nascetur ridiculus mus. Suspendisse faucibus interdum posuere lorem ipsum. Tellus rutrum tellus pellentesque eu. 
+                        Felis eget velit aliquet sagittis id consectetur purus ut. Quis hendrerit dolor magna eget est. At auctor urna nunc id 
+                        cursus metus aliquam. Metus aliquam eleifend mi in nulla. Eget gravida cum sociis natoque penatibus et magnis dis.Dictum 
+                        non consectetur a erat nam at lectus. Ornare arcu odio ut sem nulla pharetra diam sit amet. Posuere ac ut consequat semper 
+                        viverra. Cras semper auctor neque vitae tempus quam pellentesque nec. Lorem ipsum dolor sit amet consectetur adipiscing. 
+                        Gravida neque convallis a cras semper auctor neque vitae. Nam aliquam sem et tortor. Et malesuada fames ac turpis egestas 
+                        integer eget aliquet. Ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a. Ac tincidunt vitae semper quis 
+                        lectus nulla. Vitae tempus quam pellentesque nec nam aliquam.Praesent semper feugiat nibh sed pulvinar proin gravida 
+                        hendrerit lectus. Quis ipsum suspendisse ultrices gravida dictum fusce. Sit amet dictum sit amet justo donec enim diam. 
+                        Volutpat ac tincidunt vitae semper quis. Dignissim enim sit amet venenatis urna. Hac habitasse platea dictumst vestibulum 
+                        rhoncus est pellentesque elit ullamcorper. Purus in mollis nunc sed id. Ac tortor vitae purus faucibus ornare suspendisse 
+                        sed. Libero enim sed faucibus turpis in eu mi bibendum neque. Suspendisse potenti nullam ac tortor. Nam at lectus urna 
+                        duis convallis convallis tellus id interdum. Diam vel quam elementum pulvinar etiam non quam. Egestas integer eget 
+                        aliquet nibh praesent tristique. Gravida quis blandit turpis cursus.
+                    </p>
+                </div >
+            </div>
+        </li>
+        <li class="cardVisible">
+            <div class="cardImg"><img src="..\imgs\work.jpg" alt="Project Cover"></div>
+            <div class="cardInfo"></div>
+        </li>
+    </ul>
+    <script>
+        const handleClick = () => {
+            let text = document.getElementById("search").value
+            if (text.length === 0) {
+                window.alert("Please Enter a Value")
+            } else {
+                hideForSearch(term)
+            }
+        }
+
+        function hideForSearch(term) {
+            let projects = document.getElementById("search")
+        }
+
+    </script>
 </body>
 </html>

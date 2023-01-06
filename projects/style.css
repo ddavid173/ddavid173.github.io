@@ -1,19 +1,149 @@
 html, body, h1, h2, h3, p, ul, li {
+    font-family: 'Knewave', cursive;
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
   }
 
 #intro {
+    top: 0;
     background-color: #333;
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
+    height: 25vh;
     display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
 }
 
 #intro h2, #intro p {
     color: white;
     width: 100vw;
-    height: 10vh;
-    margin: auto;
+    margin: 0;
+    text-align: center;
 }
+
+#intro h2 {
+    font-size: xx-large;
+    margin: 0;
+    height: 10vh;
+}
+
+#intro div {
+    margin: auto;
+    padding: 0;
+    width: 100vw;
+}
+
+/* Search Input */
+
+#projectSearch {
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+}
+
+#search, #enter {
+    border-color: rgb(118, 118, 118);
+    border-width: 0;
+}
+
+#search {
+    width: 71vw;
+    background-color: rgb(181, 181, 181);
+    margin-left: 2.5vw;
+    border-radius: 2rem 0 0 2rem;
+    font-size: x-large;
+    padding-left: 2vw;
+}
+
+#enter {
+    width: 22vw;
+    border-radius: 0;
+    margin: 0;
+    background-color: rgb(118, 118, 118);
+    border-radius: 0 2rem 2rem 0;
+    font-size: x-large;
+}
+
+#search:focus-visible {
+    outline: 0;
+    background-color: white;
+    padding-left: 2vw;
+}
+
+#enter:hover {
+    background-color: rgb(181, 181, 181);
+}
+
+/* Project Cards */
+
+.cardVisible {
+    width: min(95vw, 800px);
+    aspect-ratio: 16/10;
+    margin: auto;
+    margin-top: 2.5vh;
+    background-color: #333;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: flex;
+    padding: 2px;
+    flex-direction: column;
+}
+
+.cardInvisible {
+    visibility: hidden;
+    width: min(95vw, 800px);
+    aspect-ratio: 16/10;
+    margin: auto;
+    margin-top: 2.5vh;
+    padding: 0;
+}
+
+#projectList {
+    height: 72.5vh;
+    margin-bottom: 2.5vh;
+    margin-top: 5vh;
+}
+
+.cardImg {
+    object-fit: cover;
+    width: 100%;
+    height: 70%;
+    background-color: white;
+    border-radius: 2rem 2rem 0 0;
+    overflow: hidden;
+}
+
+.cardInfo {
+    width: 100%;
+    height: 30%;
+    background-color: white;
+    border-radius: 0 0 2rem 2rem;
+    margin-top: 2px;
+    overflow: hidden;
+}
+
+.desContainer {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.pName {
+    flood-color: white;
+}
+
+.pDes {
+    padding: 5px;
+    display: flex;
+    overflow: hidden;
+
+}
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
