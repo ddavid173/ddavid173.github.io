@@ -140,7 +140,6 @@ html, body, h1, h2, h3, p, ul, li {
 
   }
 
-  i{
-    width: 3vw;
-    height: 3vw;
+  .aHome {
+    color: white;
   }
