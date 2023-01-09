@@ -33,12 +33,18 @@ header{
 
 }
 
-p{
+p {
     margin-top: 0;
     margin-bottom: 20px;
 }
 
-back {
-    width: 4vw;
-    height: 4vw;
+.contact {
+    width: 100%;
+    margin-top: 4vh;
+    font-size: 4vh;
+    font-weight: bolder;
+}
+
+.personal {
+    font-weight: 500;
 }
